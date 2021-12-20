@@ -1,6 +1,6 @@
 import { FunctionalComponent, h } from 'preact';
 import { Link } from 'preact-router/match';
-import style from './style.scss';
+import style from './notfound.module.scss';
 
 const Notfound: FunctionalComponent = () => {
     return (

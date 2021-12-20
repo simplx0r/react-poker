@@ -12,9 +12,14 @@
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+"project": "./tsconfig.eslint.json"
+},
     "extends": [
-      "preact",
-      "plugin:@typescript-eslint/recommended"
+      "airbnb",
+      "airbnb-typescript",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:@typescript-eslint/recommended-requiring-type-checking"
     ],
     "ignorePatterns": [
       "build/"
@@ -22,6 +27,7 @@
   },
   "dependencies": {
     "eslint-config-airbnb": "^19.0.2",
+    "eslint-config-airbnb-typescript": "^16.1.0",
     "preact": "^10.6.4",
     "preact-cli": "^3.3.3",
     "preact-render-to-string": "^5.1.19",

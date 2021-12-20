@@ -26,6 +26,6 @@ export const counterModule = (parentStore: StoreonStore<State, Events>) => {
   store.on("@init", () => ({ number: 228 }));
   store.on(CounterIncrementEvent, (state) => ({ number: state.number + 1 }));
   store.on(CounterSetEvent, (state, event) => ({
-    number: event
+    number: state.number + event
   }));
 };

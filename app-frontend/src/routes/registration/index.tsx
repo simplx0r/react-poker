@@ -1,7 +1,11 @@
-import { FunctionalComponent } from 'preact';
-import   style from './style.scss';
-const Registation: FunctionalComponent = (props) => {
-  return (<div>
-    123
-  </div>)
+import { FunctionalComponent, h } from 'preact';
+
+const Registation: FunctionalComponent = () => {
+  return (
+    <div class="container">
+      <form>
+        
+      </form>
+    </div>
+  )
 }

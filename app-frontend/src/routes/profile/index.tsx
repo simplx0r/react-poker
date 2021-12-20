@@ -2,14 +2,14 @@ import { FunctionalComponent, h } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import { useStoreon } from 'storeon/preact';
 import { CounterIncrementEvent } from '../../store/slices/counter.module';
-import style from './style.scss';
+import style from './profile.module.scss';
 
 interface Props {
     user: string;
 }
 
-const Profile: FunctionalComponent<Props> = (props: Props) => {
-    const { user } = props;
+const Profile: FunctionalComponent = () => {
+
     const [time, setTime] = useState<number>(Date.now());
     const {dispatch, number} = useStoreon('number')
     console.log(number)
@@ -31,14 +31,7 @@ const Profile: FunctionalComponent<Props> = (props: Props) => {
 
     return (
         <div class={style.profile}>
-            <h1>Profile: {user}</h1>
-            <p>This is the user profile for a user named {user}.</p>
 
-            <div>Current time: {new Date(time).toLocaleString()}</div>
-
-            <p>
-                <button onClick={increment}>Click Me</button> Clicked {number} times.
-            </p>
         </div>
     );
 };
