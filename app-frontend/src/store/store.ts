@@ -6,12 +6,10 @@ import {
   CounterModuleEvents
 } from "./slices/counter.module";
 
-// State structure
 export type State = CounterModuleState;
-// export type State = CounterModuleState & NextModuleState;
 
 export type Events = CounterModuleEvents;
-// export type Events = CounterModuleEvents & NextModuleEvents;
+
 
 export const store = createStoreon<State, Events>([
   counterModule,

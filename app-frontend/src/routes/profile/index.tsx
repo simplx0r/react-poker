@@ -1,6 +1,6 @@
 import { FunctionalComponent, h } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
-import { useStoreon } from 'storeon/react';
+import { useStoreon } from 'storeon/preact';
 import { CounterIncrementEvent } from '../../store/slices/counter.module';
 import style from './style.scss';
 

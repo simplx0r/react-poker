@@ -6,7 +6,7 @@ import Profile from '../routes/profile';
 import NotFoundPage from '../routes/notfound';
 import Header from './header';
 import { store } from '../store/store';
-import { StoreContext } from 'storeon/react'
+import { StoreContext } from 'storeon/preact'
 
 const App: FunctionalComponent = () => {
     return (
